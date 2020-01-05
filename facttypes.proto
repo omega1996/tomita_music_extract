@@ -1,0 +1,24 @@
+import "base.proto"; 
+import "facttypes_base.proto";
+
+message Film: NFactType.TFact
+{
+    optional string Name = 1;
+    optional string Genre = 2;
+    optional string Director = 3;
+    optional string Date = 4;
+}
+
+message Fact: NFactType.TFact
+{
+	required string Field1 = 1;
+}
+
+message Albums: NFactType.TFact
+{
+	required string Name = 1;
+	optional string Translate = 2;
+	required string Author = 3;
+	required string Date = 4;
+	
+}
